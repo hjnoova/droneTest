@@ -4,7 +4,7 @@ name: droneTest-svc
 
 steps:
   - name: build
-    # image: base-python-image:python3.10-with-pipenv
+    image: base-python-image:python3.10-with-pipenv
     # ports:
     #   - 28080:28080
     commands:

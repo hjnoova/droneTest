@@ -10,5 +10,4 @@ steps:
   - name: build
     image: base-python-image:python3.10-with-pipenv
     commands:
-      # - docker-compose -f docker-compose.yml up -d --build
-      - /bin/bash echo "hahahahahah"
+      - docker-compose -f docker-compose.yml up -d --build

@@ -10,6 +10,5 @@ steps:
     commands:
       - cd ./app && pwd
       - pip install -r requirements.txt
-      - nohup uvicorn app:app --host 0.0.0.0 --port 28080 &
-    when:
-      status: success
+      - uvicorn app:app --host 0.0.0.0 --port 28080
+    detach: true

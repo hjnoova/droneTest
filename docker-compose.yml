@@ -6,9 +6,9 @@ services:
     image: base-python-image:python3.10-with-pipenv
     command: bash -c "cd /app && pwd && pipenv install && pipenv run uvicorn app:app --host 0.0.0.0 --port 8080"
     expose:
-      - 8080
+      - 20080
     ports:
-      - 8080:8080
+      - 20080:8080
     volumes:
       - ./app:/app
     

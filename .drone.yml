@@ -3,6 +3,10 @@ type: docker
 name: droneTest-svc
 
 steps:
+  - name: check
+    commands:
+    - docker images
+  
   - name: build
     # image: docker
     commands:

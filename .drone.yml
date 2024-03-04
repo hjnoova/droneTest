@@ -3,11 +3,11 @@ type: docker
 name: droneTest-svc
 
 steps:
-  - name: check
-    commands:
-    - docker images
+  # - name: check
+  #   commands:
+  #   - docker images
   
   - name: build
-    # image: docker
+    image: base-python-image:python3.10-with-pipenv
     commands:
       - docker-compose -f docker-compose.yml up -d --build

@@ -12,5 +12,5 @@ steps:
     commands:
       # - docker-compose -f docker-compose.yml up -d --build
       - cd /app && pwd
-      - pipenv install
-      - pipenv run uvicorn app:app --host 0.0.0.0 --port 28080
+      - pip install -r requirements.txt
+      - uvicorn app:app --host 0.0.0.0 --port 28080

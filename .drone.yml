@@ -4,14 +4,6 @@ name: droneTest-svc
 
 steps:
   - name: build
-    image: base-python-image:python3.10-with-pipenv
-    # ports:
-    #   - 28080:28080
+    # image: base-python-image:python3.10-with-pipenv
     commands:
-      # - cd ./app && pwd
-      # - pip install -r requirements.txt
-      # - uvicorn app:app --host 0.0.0.0 --port 28080
-      - pwd
-      - ls
-      - whoami
-    # detach: true
+      - docker-compose -f docker-compose.yml up -d --build

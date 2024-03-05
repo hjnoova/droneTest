@@ -4,6 +4,6 @@ name: droneTest-svc
 
 steps:
   - name: build
-    # image: base-python-image:python3.10-with-pipenv
+    image: base-python-image:python3.10-with-pipenv
     commands:
       - docker-compose -f docker-compose.yml up -d --build
